@@ -1,0 +1,9 @@
+table,th,td{
+	border : 1px solid #4CAF50;
+	
+	
+}
+th{
+	background-color: #4CAF50;
+	color:white;
+}
