@@ -14,13 +14,164 @@
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.eot');
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.woff') format('woff'), url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'), url('../fonts/Comfortaa/Comfortaa-Regular.svg') format('svg');
 }
+@font-face {
+  font-family: 'EntezareZohoor2';
+  src: url('fonts/EntezareZohoor2.eot');
+  src: url('fonts/EntezareZohoor2.eot?') format('☺'),
+       url('fonts/EntezareZohoor2.woff') format('woff'),
+       url('fonts/EntezareZohoor2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
     height: 100%;
     margin: 0;
 }
 .bg {
     /* The image used */
-    background: url("../images/pic7.JPG");
+    background: url("../images/pic13.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+	
+//   filter: grayscale(100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+#myName{
+	/*	border-size:2px;
+		border-style:solid;
+		border-color:white;*/
+		color: black;
+		position: absolute;
+		width : 38%;
+		height:50%;
+		margin-top:0px;
+		bottom:200px;
+		margin-left:100px;
+		margin-right:0px;
+		padding:-1px;
+	
+				
+}
+p,ul li,ol li{
+	margin:0;
+	font-size:15px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family:'EntezareZohoor2',sans-serif;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+h1 a.navbar-brand {
+    font-size: 35px;
+    color: #800000!important;
+    padding: 0;
+    height: inherit;
+    margin-left:-100px;
+	text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.navbar-fixed-top {
+    background:rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: .6em 14em;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all; 
+	transition:.5s all;
+}
+
+ ul {
+    list-style-type: none;
+	
+    margin: 0;
+	margin-right:-450px;
+	margin-top: -40px;
+    padding: 0;
+    overflow: hidden;
+   /* background-color: #333;*/
+	width : 70%;
+	float:right;
+}
+
+li {
+    float: left;
+	
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+	border-radius:12px;
+}
+.knowMore {
+    background-color: #4CAF50; 
+    color: black; 
+    border: 2px solid #e7e7e7;
+	border-radius:12px;
+	height:50px;
+	width:110px;
+}
+
+.knowMore:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.downloadCV{
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #e7e7e7;
+	height:50px;
+	width:110px;
+	border-radius:12px;
+}
+
+.downloadCV:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+/* portfolio */
+.portfolio{
+    /* The image used */
+    background: url("../images/pic7.jpg");
 
     /* Full height */
     height: 100%; 
@@ -29,4 +180,95 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	
 }
+#myName.a{
+	text-decoration:none;
+}
+#portfolioIn{
+	/*border-size:2px;
+		border-style:solid;
+		border-color:white;*/
+		color: white;
+		position: absolute;
+		width : 50%;
+		height:50%;
+		margin-top:0px;
+		bottom:-1050px;
+		margin-left:300px;
+		margin-right:0px;
+		padding:-1px;
+		border-radius:12px;
+		
+	
+}
+
+img{
+	border-radius:12px;
+}
+
+/* contact */
+
+.contact{
+    /* The image used */
+    background: url("../images/pic10.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+.about{
+    /* The image used */
+    background: url("../images/pic10.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+	
+//    filter: grayscale(100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+#aboutInner{
+	/*	border-size:2px;
+		border-style:solid;
+		border-color:black;*/
+		color: black;
+		text-align:justify;
+		position: absolute;
+		width : 90%;
+		height:50%;
+		margin-top:0px;
+		bottom:-400px;
+		margin-left:10px;
+		margin-right:10px;
+		padding:-1px;
+		border-radius:12px;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.about{
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }

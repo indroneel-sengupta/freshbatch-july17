@@ -3,12 +3,156 @@
 <html>
 <head>
 
-	<title>HOME-Portfolio</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 </head>
 <body>
+
 <div class = "bg">
+	<div id = "home">
+		<div class="header"> 
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top"> 
+					<div class="navbar-header page-scroll">
+						<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">My_Design</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>-->
+						<h1><a class="navbar-brand" href="index.html">Shahrukh Khan</a></h1>
+					</div> 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					
+						<ul>
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+							<li><a  href="#home" id = "bt1home">Home</a></li>
+							<li><a  href="#about" id = "bt2about">About</a></li>							
+							<li><a  href="#portfolio" id = "bt3portfolio">Portfolio</a></li>
+							
+						</ul>
+						
+					
+					<!-- /.navbar-collapse -->
+				<!-- /.container -->
+			</nav>  
+		</div>	
+		<div id = "myName">
+			<h1>HI, I AM</h1>
+			<h1>Shahrukh Khan</h1>
+			
+			<h3>I am an Actor</h3>
+			<button class="knowMore" id = "btknowMore" ><a href = "#about">Know More</a></button>
+			<button class="downloadCV" id = "btgallery" ><a href = "#portfolio">Gallery</a></button>
+		</div>
+	</div>	
+</div>
+<div id="about" class = "about">
+	<div id= "aboutInner">
+	<h1>About</h1>
+	<p>Shah Rukh Khan (born Shahrukh Khan; 2 November 1965), also known as SRK, is an Indian film actor, producer and television personality. Referred to in the media as the "Baadshah of Bollywood", "King of Bollywood" or "King Khan", he has appeared in more than 80 Bollywood films, and earned numerous accolades, including 14 Filmfare Awards. Khan has a significant following in Asia and the Indian diaspora worldwide. In terms of audience size and income, he has been described as one of the most successful film stars in the world.
+Khan began his career with appearances in several television series in the late 1980s. He made his Bollywood debut in 1992 with Deewana. Early in his career, Khan was recognised for portraying villainous roles in the films Darr (1993), Baazigar (1993) and Anjaam (1994). He then rose to prominence after starring in a series of romantic films, including Dilwale Dulhania Le Jayenge (1995), Dil To Pagal Hai (1997), Kuch Kuch Hota Hai (1998), Mohabbatein (2000) and Kabhi Khushi Kabhie Gham... (2001). He earned critical acclaim for his portrayal of an alcoholic in Devdas (2002), a NASA scientist in Swades (2004), a hockey coach in Chak De! India (2007) and a man with Asperger syndrome in My Name Is Khan (2010). His highest-grossing films include the comedies Chennai Express (2013) and Happy New Year (2014). Many of his films display themes of Indian national identity and connections with diaspora communities, or gender, racial, social and religious differences and grievances. For his contributions to film, the Government of India honoured him with the Padma Shri, and the Government of France awarded him both the Ordre des Arts et des Lettres and the Légion d'honneur.
+As of 2015, Khan is co-chairman of the motion picture production company Red Chillies Entertainment and its subsidiaries, and is the co-owner of the Indian Premier League cricket team Kolkata Knight Riders. He is a frequent television presenter and stage show performer. The media often label him as "Brand SRK" because of his many endorsement and entrepreneurship ventures. Khan's philanthropic endeavours have provided health care and disaster relief, and he was honoured with UNESCO's Pyramide con Marni award in 2011 for his support of children's education. He regularly features in listings of the most influential people in Indian culture, and in 2008, Newsweek named him one of their fifty most powerful people in the world. 
+	</p>
+	
+	</div>
+</div>
+<div id="portfolio" class="portfolio">
+	<div id = "portfolioIn">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/pic11.JPG" alt="Los Angeles" style="width:100%; height:100%">
+				</div>
+
+				<div class="item">
+					<img src="images/pic16.jpg" alt="Chicago" style="width:100%; height:100%">
+				</div>
+    
+				<div class="item">
+					<img src="images/pic13.jpg" alt="New york" style="width:100%; height:100%">
+				</div>
+			</div>
+
+		<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+	
+	</div>
 	
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+	$("#bt1home").on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
+    $('html, body').stop().animate({
+       scrollTop: $("#home").offset().top
+    }, 1000);
+	});
+	
+	$("#bt2about").on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
+    $('html, body').stop().animate({
+       scrollTop: $("#about").offset().top
+    }, 1000);
+	});
+	
+	
+	$("#bt3portfolio").on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
+    $('html, body').stop().animate({
+       scrollTop: $("#portfolio").offset().top
+    }, 1000);
+	});
+	
+	$("#btknowMore").on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
+    $('html, body').stop().animate({
+       scrollTop: $("#about").offset().top
+    }, 1000);
+	});
+	
+	$("#btgallery").on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
+    $('html, body').stop().animate({
+       scrollTop: $("#portfolio").offset().top
+    }, 1000);
+	});
+	
+  </script>
 </body>
 </html>
