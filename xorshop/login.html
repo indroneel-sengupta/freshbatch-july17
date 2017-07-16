@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <title>Xorshop</title>
+  <link rel="icon" type="image/png" href="images/logo3.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -13,7 +15,7 @@
 <div class="jumbotron" id = "header">
   <div class="container text-center">
 	 <h1>
-  <img src="images\logo3.png" alt="logo" class="headLogo" style="width:80px; height: 90px; margin-top: -0.5em">ORSHOP</h1>      
+  <img src="images\logo3.png" alt="logo" class="headLogo" style="width:120px; height: 120px; margin-top: -0.5em">ORSHOP</h1>
     
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -23,11 +25,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Xorshop</a>
+      <a class="navbar-brand" href="index.html">Xorshop</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li ><a href="#"><span class="glyphicon glyphicon-home"> Home</a></li>
+        <li ><a href="index.html"><span class="glyphicon glyphicon-home"> Home</a></li>
 		<li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By Categories
         <span class="caret"></span></a>
@@ -39,7 +41,6 @@
         </ul>
       </li>
         
-        <li><a href="#">Contact</a></li>
       </ul>
         <form class="navbar-form navbar-left">
           <div class="input-group">
@@ -95,107 +96,42 @@
 
 
 
-<!--<footer class="container-fluid text-center">
-     <section class="nb-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="footer-single">
+<footer class="container-fluid text-center">
+    <div class="jumbotron" id = "footer">
+        <div class="container text-center">
+          <div class="row text-center">
 
+             <div id="footerLeft" class="col-sm-4">
+                  <h3>Our Network</h3>
+                  <ul style="list-style-type: none;">
+                      <li> Pune </li>
+                      <li> Mumbai </li>
+                      <li> Gurugram </li>
+                      <li> Bangalore </li>
+                      <li> Kolkata </li>
+                  </ul>
+             </div>
 
-  <!--  <img src="images/logo.png" class="img-responsive" alt="Logo"> -->
+             <div id="footerCenter" class="col-sm-4">
+                  <h3>Contact us</h3>
+                  <p>  5th floor, Amar Paradigm,
+                       Baner Road,Baner, Pune 411 045
+                  <br> Tel: +91 (20) 66046000<br>info@xorshop.com</p>
+             </div>
 
-    <!-- This is only for better view of theme if you want your image logo remove div dummy-logo bellow and replace your logo in logo.png and uncomment logo tag above-->
-<!--                  <div class="dummy-logo">
-                    <div class="icon pull-left brand">
-                        <i class="fa fa-copy"></i>
-                    </div>
-                    <h2>Xorshop</h2>
-                    
-                  </div>
+             <div id="footerRight" class="col-sm-4">
+                  <h3>Connect with us socially</h3>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis diam, vulputate in risus eu, porttitor condimentum purus. Phasellus ullamcorper, odio id feugiat bibendum.</p>
-                  <a href="#" class="btn btn-footer">Read More</a>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="footer-single useful-links">
-                    <div class="footer-title"><h2>Navigation</h2></div>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home <i class="fa fa-angle-right pull-right"></i></a></li>
-                            <li><a href="about1.html">About Us <i class="fa fa-angle-right pull-right"></i></a></li>
-                            <li><a href="service1.html">Services <i class="fa fa-angle-right pull-right"></i></a></li>
-                            <li><a href="portfolio1.html">Portfolio <i class="fa fa-angle-right pull-right"></i></a></li>
-                            <li><a href="pricing.html">Pricing <i class="fa fa-angle-right pull-right"></i></a></li>
-                            <li><a href="contact1.html">Contact Us <i class="fa fa-angle-right pull-right"></i></a></li>
-                </div>
-            </div>
-            <div class="clearfix visible-sm"></div>
-
-            <div class="col-md-3 col-sm-6">
-  
-                <div class="col-sm-12 left-clear right-clear footer-single footer-project">
-                      <div class="footer-title"><h2>Latest Projects</h2></div>
-                      <div class="col-xs-4">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-                      <div class="col-xs-4">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-                      <div class="col-xs-4">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-                      <div class="clearfix"></div>
-                      <div class="col-xs-4">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-                      <div class="col-xs-4">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-                      <div class="col-xs-4">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive center-block">
-                      </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="footer-single">
-                   <div class="footer-title"><h2>Contact Information</h2></div>
-                  <address>
-                      999, Holly Eiusmod Tempor, City<br>
-                      Your State, Country <br>
-                      <i class="fa fa-phone"></i>  987 654 3210 <br>
-                      <i class="fa fa-fax"></i> 012 123 2345<br>
-                      <i class="fa fa-envelope"></i> info@example.com<br>
-                </address>          
-              </div>
-            </div>
-
+             </div>
           </div>
         </div>
-      </section>  
-
-      <section class="nb-copyright">
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-6 copyrt xs-center">
-                   2015 © All Rights Reserved. <a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a>
-              </div>
-              <div class="col-sm-6 text-right xs-center">
-                  <ul class="list-inline footer-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                  </ul>
-              </div>
-            </div>
-        </div>
-      </section>-->
-  </footer>
-
+    </div>
+</footer>
 
 </body>
 </html>
