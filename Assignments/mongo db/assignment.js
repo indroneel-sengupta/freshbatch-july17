@@ -22,39 +22,165 @@ db.emp.find({"job":'CLERK'},{"ename":1,"deptno":1});
 db.emp.find({"deptno":{$lt:21}},{"ename":1,"deptno":1});
 
 db.emp.find("this.comm>this.sal*0.5",{"ename":1,"deptno":1,"job":1});
-
-db.emp.find({$and: [
-         {"sal":{$gte:2000}} , {"job":{$ne:'CLERK'}},{"job":{$ne:'MANAGER'}}
-      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});
-
+
 db.emp.find({$and: [
          {"sal":{$gte:2000}} , {"job":{$ne:'CLERK'}},{"job":{$ne:'MANAGER'}}
       ]},{"ename":1,"deptno":1,"sal":1 , "job":1});
-  
-db.emp.find({$and: [
-         {"sal":{$gte:1200}} , {"sal":{$lte:1400}}
-      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});
-      
-db.emp.find({$and: [
-          {"job":{$ne:'CLERK'}},{"job":{$ne:'ANALYST'}},{"job":{$ne:'SALESMAN'}}
-      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});     
-      
-db.emp.find({$or: [
-          {"comm":null}, {"comm":0} 
-      ]},
-      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1}); 
-      
-db.emp.find(
-           {"comm":{$gt:0}},
-      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1});
-      
-      
-db.emp.find({$or: [
-          {"comm":null}, {"comm":0} , {"comm":{$lt:100}} 
-      ]},
-      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1}); 
- 
- db.emp.find(
-           {"ename":{$regex:/^.{2}R/}},
+
+db.emp.find({$and: [
+         {"sal":{$gte:2000}} , {"job":{$ne:'CLERK'}},{"job":{$ne:'MANAGER'}}
+      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});
+  
+db.emp.find({$and: [
+         {"sal":{$gte:1200}} , {"sal":{$lte:1400}}
+      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});
+      
+db.emp.find({$and: [
+          {"job":{$ne:'CLERK'}},{"job":{$ne:'ANALYST'}},{"job":{$ne:'SALESMAN'}}
+      ]},{"ename":1,"deptno":1,"sal":1 , "job":1});     
+      
+db.emp.find({$or: [
+          {"comm":null}, {"comm":0} 
+      ]},
+      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1}); 
+      
+db.emp.find(
+           {"comm":{$gt:0}},
       {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1});
-    
+      
+      
+db.emp.find({$or: [
+          {"comm":null}, {"comm":0} , {"comm":{$lt:100}} 
+      ]},
+      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1}); 
+ 
+ db.emp.find(
+           {"ename":{$regex:/^.{2}R/}},
+      {"ename":1,"deptno":1,"sal":1 , "job":1,"comm":1});
+      
+      
+db.emp.aggregate(
+        {"$project":{
+            "ename":1,
+            month:{$month:"$hiredate"}
+         }},
+         {
+            $match: { month:2 }   
+         }
+         
+         
+ )
+         
+ 
+db.emp.aggregate(
+        {"$project":{
+            "ename":1,
+            "job":1,
+            day:{$dayOfMonth:"$hiredate"},
+            month:{$month:"$hiredate"},
+            year:{$year:"$hiredate"}
+         }}      
+        ,
+         {$match:{$and:[
+                    {year:2007},{"job":"MANAGER"}
+                  ]
+            }
+         }  
+)
+
+db.emp.aggregate(
+        {"$project":{
+            "ename":1,
+            "job":1,
+            day:{$dayOfMonth:"$hiredate"},
+            month:{$month:"$hiredate"},
+            year:{$year:"$hiredate"}
+         }}      
+        
+)        
+        
+db.system.js.save(
+   {
+     _id: "echoFunction",
+     value : function(x) { return x; }
+   }
+)
+
+db.system.js.save(
+   {
+     _id : "myAdd1Function" ,
+     value : function (years,months,dayss){
+         var year = parseInt(years);
+         var month = parseInt(months);
+         var day = parseInt(dayss);
+         var days = 0;
+          days = day + (month*30) + (year*365); 
+         return (days); }
+   }
+);       
+
+
+myAdd1Function('10','2','3');
+
+db.loadServerScripts();       
+db.emp.aggregate(
+    {$project:{
+            "hYear": {$year:"$hiredate"},
+            "hMonth": {$month : "$hiredate"},
+            "hDate" : {$dayOfMonth : "$hiredate"},
+            "cYear": {$year:new Date()},
+            "cMonth": {$month : new Date()},
+            "cDate" : {$dayOfMonth : new Date()},
+        
+    }},
+    
+    {$project:{
+           
+            (myAdd1Function('10','12','13'))
+        
+    }}
+)
+    
+    
+    
+db.emp.find().forEach(function (doc){
+    var date  = new Date();
+    var today = parseInt(date);
+    var mnths = parseInt(date - doc.hiredate)/(1000*60*60*24*30);
+    var mn = Math.round(mnths);
+    print(doc.ename,mn);    
+});
+db.emp.find().forEach(function(doc) { //trailing R
+    var str = doc.ename;
+    var len = str.length;
+
+    if( str[len-1] == 'r')
+    {
+      var res = str.split(/r$/i)
+        print(res[0]);
+    }
+    else
+    {
+        print(str);
+        }
+});
+
+db.emp.aggregate([
+   
+     {$project:{
+            "ename":1,
+            "sal":1,
+            "dname":1,
+          
+            
+    }},
+    {$group:{
+        
+           _id: "$dname",
+           minQuantity: { $min: "$sal" },
+          
+           
+        
+    }}   
+]
+)
