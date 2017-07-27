@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import {const_fun} from './components/constants.js';
 import {scope_fun} from './components/scope.js';
 import {enhance_fun} from './components/enhance_obj.js';
@@ -11,6 +12,10 @@ import {desB_fun} from './components/desB.js';
 import {getCashOfBank} from './components/class.js';
 import {itt_fun} from './components/iterator.js';
 import {arm_fun} from './components/arm.js';
+import {armstrong2} from './components/generator.js';
+import {messages} from './components/chatroom.js';
+import {users} from './components/chatroom.js';
+import {promise} from './components/promise.js';
 
 //const_fun();
 //scope_fun();
@@ -24,4 +29,10 @@ import {arm_fun} from './components/arm.js';
 //desB_fun();
 
 //getCashOfBank();
-arm_fun();
+//arm_fun();
+// armstrong2();
+// let m = 'music';
+// let s = 'sports';
+// messages(m);
+// users(s);
+promise();
