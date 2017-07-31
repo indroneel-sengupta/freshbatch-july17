@@ -1,9 +1,11 @@
 
 import { Component, EventEmitter } from '@angular/core';
+import{AdvertisementServices} from '../AddvertisementServices/AdvertisementServices.service';
+
 @Component({
     selector: 'AdvertisementFormComponent',
     templateUrl: `./AdvertisementFormComponent.html`,
-    outputs: ['childEvent']
+    
 })
 export class AdvertisementFormComponent{
       childEvent = new EventEmitter<Adv>();
@@ -14,10 +16,15 @@ export class AdvertisementFormComponent{
                 {id:1,name:'Furniture'},
                 {id:1,name:'Mobile'}
      ];
-     //adv:Array<Adv> = [];
+     adv:Array<any> = [];
+
+     constructor(private advService:AdvertisementServices){}
      onOkClick(titleRef:string , nameRef:string , priceRef:number , catRef:string):void{
-            let adv = new Adv(titleRef,nameRef,priceRef,catRef);
-            this.childEvent.emit(adv);
+            // let adv = new Adv(titleRef,nameRef,priceRef,catRef);
+            // this.childEvent.emit(adv);
+            
+            this.advService.addNewAdd(titleRef,nameRef,priceRef,catRef);
+
             console.log(titleRef,nameRef,priceRef,catRef);
        
      }

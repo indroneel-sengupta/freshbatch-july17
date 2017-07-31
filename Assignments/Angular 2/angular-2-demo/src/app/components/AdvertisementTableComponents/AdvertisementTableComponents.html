@@ -27,11 +27,12 @@
                 <th> Price </th>
                 <th> Category </th>            
             </tr>
-            <tr *ngFor = "let ad of allAds | search:searchText.value">
-                 <td> {{ad.title}} </td>
-                <td> {{ad.name}} </td>
-                <td> {{ad.price}} </td>
-                <td> {{ad.category}} </td>
+            <tr *ngFor = "let ad of allAds | search:searchText.value" >
+                 <td> {{ad[0]}} </td>
+                <td> {{ad[1]}} </td>
+                <td> {{ad[2]}} </td>
+                <td> {{ad[3]}} </td>
+                <td> <button type="button" class="btn btn-primary" (click)="onClickDelete(allAds,i)">Delete</button>
         
             </tr>
         </table>
