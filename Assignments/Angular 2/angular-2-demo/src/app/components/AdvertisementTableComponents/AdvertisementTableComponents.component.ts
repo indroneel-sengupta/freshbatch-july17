@@ -1,5 +1,6 @@
 import{AdvertisementServices} from '../AddvertisementServices/AdvertisementServices.service';
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'AdvertisementTableComponents',
@@ -9,16 +10,20 @@ import { Component } from '@angular/core';
 export class AdvertisementTableComponents{
       title = 'Product';
       allAds:Array<any>;
-      constructor(private advService:AdvertisementServices){
+      constructor(private advService:AdvertisementServices,private router: Router){
             this.allAds = advService.getAllAds();
-            console.log("allads = ",this.allAds)
+           // console.log("allads = ",this.allAds)
 
       }
             
-      onClickDelete(allAdss:Array<any>,i:number){
-           // console.log(allAdss,i)
-            allAdss.splice(i, 1);
-           
+      onClickDelete(adv:any){
+          this.advService.adDelete(adv);           
+      }
+  
+
+      onEdit(adId:number){
+           //this.allAds = this.advService.getAllAds();   
+           this.router.navigate(['/edit', adId]);        
       }
       
     

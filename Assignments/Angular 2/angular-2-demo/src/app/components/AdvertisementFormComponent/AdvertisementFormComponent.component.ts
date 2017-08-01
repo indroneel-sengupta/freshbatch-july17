@@ -9,6 +9,7 @@ import{AdvertisementServices} from '../AddvertisementServices/AdvertisementServi
 })
 export class AdvertisementFormComponent{
       childEvent = new EventEmitter<Adv>();
+      addId: number = 0;
       title = 'Product';
       placeholder = 'Indroneel Sengupta';
       category = [
@@ -22,8 +23,8 @@ export class AdvertisementFormComponent{
      onOkClick(titleRef:string , nameRef:string , priceRef:number , catRef:string):void{
             // let adv = new Adv(titleRef,nameRef,priceRef,catRef);
             // this.childEvent.emit(adv);
-            
-            this.advService.addNewAdd(titleRef,nameRef,priceRef,catRef);
+            this.addId += 1;
+            this.advService.addNewAdd(titleRef,nameRef,priceRef,catRef,this.addId);
 
             console.log(titleRef,nameRef,priceRef,catRef);
        

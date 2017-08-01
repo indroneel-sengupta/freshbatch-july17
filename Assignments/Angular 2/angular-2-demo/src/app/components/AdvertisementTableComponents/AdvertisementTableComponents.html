@@ -18,24 +18,31 @@
                 </span>
     
             </div>
-        </div>
+        
        
-        <table>
+        <table border="1" class = "table">
             <tr>
+                <th> Add-Id </th>
                 <th> Title </th>
                 <th> Name </th>
                 <th> Price </th>
                 <th> Category </th>            
+                <th> Actions </th> 
             </tr>
             <tr *ngFor = "let ad of allAds | search:searchText.value" >
+                <td> {{ad[4]}} </td>
                  <td> {{ad[0]}} </td>
                 <td> {{ad[1]}} </td>
                 <td> {{ad[2]}} </td>
                 <td> {{ad[3]}} </td>
-                <td> <button type="button" class="btn btn-primary" (click)="onClickDelete(allAds,i)">Delete</button>
+                <td> <button type="button" class="btn btn-primary" (click)="onClickDelete(ad)">Delete</button>
+                    <button type="button" class="btn btn-primary" (click)="onEdit(ad[4])">Edit</button>
+                </td>
+
         
             </tr>
         </table>
+        </div>
 
     </div>
 </body>
