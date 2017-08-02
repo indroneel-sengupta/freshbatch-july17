@@ -1,0 +1,256 @@
+<div class="jumbotron" id = "header">
+  <div class="container text-center">
+	 <h1>
+  <img src="images\logo3.png" alt="logo" class="headLogo" style="width:120px; height: 120px; margin-top: -0.5em">ORSHOP</h1>
+
+         
+	<nav class="navbar navbar-inverse">
+ <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Xorshop</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+		    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By Categories
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li *ngFor="let category of categories;"><a href="#">{{category}}  </a> </li>
+        </ul>
+      </li>
+        
+      
+      </ul>
+     <form class="navbar-form navbar-left">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+		</div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#logModal" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		<li><a href="#" data-toggle="modal" data-target="#regModal" ><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+  </div>
+</div>
+
+<div class="container text-center">
+  <h2>Offers & Sales</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images\offer3.jpg" alt="Offer " >
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images\offer2.jpg" alt="sale" style="width:100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images\offer1.jpg" alt="offer" style="width:100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="container-fluid bg-3 text-center">    
+  <h2>Categories</h2><br>
+  <div class="row text-center">
+    <div class="col-sm-3">
+      <p>Automobiles</p>
+      <a href="automobiles.html"><img src="images/automobiles.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Electronics </p>
+       <a href="electronics.html"> <img src="images/electronics.png" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+	<div class="col-sm-3">
+      <p>Fashion</p>
+      <a href="fashion.html"><img src="images/fashion.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+	<div class="col-sm-3"> 
+      <p>Real Estate </p>
+       <a href="realEstate.html"><img src="images/realestate.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    
+   </div>
+</div><br><br>
+
+<div class="modal fade" id="logModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form method = "post" action = "login.html" >
+
+			         <div class="form-group">
+				            <label for="text">Username:</label>
+				            <input type="text" class="form-control" id="username" placeholder="Enter username" #userNameL>
+			         </div>
+			         <div class="form-group">
+				            <label for="pwd">Password:</label>
+				            <input type="password" class="form-control" id="pwd" placeholder="Enter password" #passwordL>
+			         </div>
+			         <div class="checkbox">
+				            <label><input type="checkbox"> Remember me  </label>
+				            <label><a href="#"> Forgot Password </a></label>
+				
+			         </div>
+			         <button type="submit" data-dismiss="modal" class="btn btn-default" (click) = onClickLogin(userNameL.value,passwordL.value)>Submit</button>
+			         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		      </form>
+       
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="modal fade" id="regModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Registration</h4>
+        </div>
+        <div class="modal-body">
+          <form method = "post" action = "login.html" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)" >
+              <div class="form-group">
+                  <label for="text">First Name:</label>
+                    <input type="text" class="form-control" id="fname" name="firstName" placeholder="Enter first name" required minlength="3" maxlength="12"  #firstName #firstNamevalidation="ngModel" ngModel>
+                    <!--<div [hidden]="!nameModelRef.errors.required" class="alert alert-danger">
+                            Please enter the name
+                    </div>
+                     <div [hidden]="!nameModelRef.errors.minlength" class="alert alert-danger">
+                            Please enter a name with more than three alphabets
+                    </div>-->
+              </div>
+
+               <div class="form-group">
+                  <label for="text">Last Name:</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lastName" #lastName ngModel>
+                  
+              </div>
+
+              <div class="form-group">
+                  <label for="text">Usename:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" name="userName" #userName ngModel>
+                  
+              </div>
+
+			       
+			       <div class="form-group">
+				          <label for="pwd">Set Password:</label>
+				            <input type="password" class="form-control" id="pwd" placeholder="set password" name="password" #password ngModel>
+			       </div>
+                   <div class="form-group">
+				        <label for="email">Email:</label>
+				            <input type="email" class="form-control" id="username" placeholder="Enter email" name="email" #email ngModel>
+			       </div>
+              <div class="form-group">
+				            <label for="phn">Contact Number:</label>
+				            <input type="text" class="form-control" id="phn" placeholder="Enter contact number" name="phone" #phone ngModel> 
+			       </div>
+             <!--<!--<div [hidden]="{{successfullLog}} " class="alert alert-danger">
+                  User Registered Successfully
+             </div>
+				        <label for="phn">Contact Number:</label>
+				        <input type="text" class="form-control" id="phn" placeholder="Enter contact number" name="phone" #phone ngModel> 
+			       </div>-->
+             
+
+			       <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClickRegister(firstName.value , lastName.value , userName.value , password.value ,email.value, phone.value)">Register</button>
+			       <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		      </form>
+       
+        </div>
+      
+    </div>
+  </div>
+ </div>
+
+<footer class="container-fluid text-center">
+    <div class="jumbotron" id = "footer">
+        <div class="container text-center">
+          <div class="row text-center">
+
+             <div id="footerLeft" class="col-sm-4">
+                  <h3>Our Network</h3>
+                  <ul style="list-style-type: none;">
+                      <li> Pune </li>
+                      <li> Mumbai </li>
+                      <li> Gurugram </li>
+                      <li> Bangalore </li>
+                      <li> Kolkata </li>
+                  </ul>
+             </div>
+
+             <div id="footerCenter" class="col-sm-4">
+                  <h3>Contact us</h3>
+                  <p>  5th floor, Amar Paradigm,
+                       Baner Road,Baner, Pune 411 045
+                  <br> Tel: +91 (20) 66046000<br>info@xorshop.com</p>
+             </div>
+
+             <div id="footerRight" class="col-sm-4">
+                  <h3>Connect with us socially</h3>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+
+             </div>
+          </div>
+        </div>
+    </div>
+</footer>
