@@ -3,6 +3,7 @@ import {RegistrationService} from '../../services/registrationService/registrati
 import {LoginService} from '../../services/loginService/loginService.service'
 import { Router } from "@angular/router";
 import { CategoriesService } from "../../services/categoriesServices/categoriesService.service";
+import { GetAllAds } from "../../services/getAllAds/getAllAds.service";
 
 @Component({
   selector: 'homeComponent',
@@ -13,6 +14,23 @@ export class HomeComponent{
     categories:Array<any> = [];
     storeReg: any;
     successfullReg:any;
+    allProducts:any;
+
+    constructor(private regService:RegistrationService, private getAds:GetAllAds ,private logService:LoginService , private router: Router , private categoriesService:CategoriesService ){
+                categoriesService.getAllCategories().subscribe((response:any)=>{
+                response.data.itemList.forEach((add:any) => {
+                this.categories.push(add.name);
+                console.log(this.categories);
+         });
+     });
+    }
+
+    onClickAllAds(){
+            this.getAds.getAllAds().subscribe((data:any)=>{
+                this.allProducts = data.data.advertiseList;
+            });
+    }
+
     onClickRegister(fName:string , lName:string , uName:string , pwd:string ,emailID:string, phn:string):void{
             this.storeReg = 
                 {firstName:fName ,
@@ -22,18 +40,11 @@ export class HomeComponent{
                 email:emailID , 
                 phone:phn};
                  this.regService.sendRegDetail(this.storeReg).subscribe((data:any)=> { 
-                                this.successfullReg=data;
+                               this.successfullReg=data;
                              console.log('Received products: ', this.successfullReg); 
                 });
     }
-    constructor(private regService:RegistrationService,private logService:LoginService , private router: Router , private categoriesService:CategoriesService ){
-                categoriesService.getAllCategories().subscribe((response:any)=>{
-                response.data.itemList.forEach((add:any) => {
-                this.categories.push(add.name);
-                console.log(this.categories);
-         });
-     });
-    }
+    
     
     
   

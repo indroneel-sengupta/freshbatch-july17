@@ -12,11 +12,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Xorshop</a>
+      <a class="navbar-brand" >Xorshop</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
      <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li class="active"><a><span class="glyphicon glyphicon-home"> Home</span></a></li>
 		    <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By Categories
         <span class="caret"></span></a>
@@ -24,28 +24,39 @@
           <li *ngFor="let category of categories;"><a href="#">{{category}}  </a> </li>
         </ul>
       </li>
+      
         
       
       </ul>
-     <form class="navbar-form navbar-left">
-		<div class="input-group">
+     <!--<form class="navbar-form navbar-left">
+
+		    <div class="input-group">
+      
 			<input type="text" class="form-control" placeholder="Search">
 				<div class="input-group-btn">
 					<button class="btn btn-default" type="submit">
 						<i class="glyphicon glyphicon-search"></i>
 					</button>
 				</div>
+
+        
+        
 		</div>
-      </form>
+      </form>-->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" data-toggle="modal" data-target="#logModal" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		<li><a href="#" data-toggle="modal" data-target="#regModal" ><span class="glyphicon glyphicon-user"></span> Register</a></li>
+    
       </ul>
     </div>
   </div>
 </nav>
 	
   </div>
+</div>
+
+<div id = "addBtn" class = "container text-right">  
+  <button type="button" (click)="onClickAllAds()"  class="btn btn-default"><a href="#getAllAds" style="text-decoration: none; color: black;">View All Ads</a></button>
 </div>
 
 <div class="container text-center">
@@ -96,27 +107,40 @@
 
   
 <div class="container-fluid bg-3 text-center">    
-  <h2>Categories</h2><br>
+  <h2>We Sell and Buy</h2><br>
   <div class="row text-center">
     <div class="col-sm-3">
-      <p>Automobiles</p>
-      <a href="automobiles.html"><img src="images/automobiles.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+     
+      <a ><img src="images/automobiles.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-3"> 
-      <p>Electronics </p>
-       <a href="electronics.html"> <img src="images/electronics.png" class="img-responsive" style="width:100%" alt="Image"></a>
+     
+       <a> <img src="images/electronics.png" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
 	<div class="col-sm-3">
-      <p>Fashion</p>
-      <a href="fashion.html"><img src="images/fashion.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+      
+      <a><img src="images/fashion.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
 	<div class="col-sm-3"> 
-      <p>Real Estate </p>
-       <a href="realEstate.html"><img src="images/realestate.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+      
+       <a><img src="images/realestate.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     
    </div>
 </div><br><br>
+
+<div class="container" id="getAllAds">
+    <div class="row text-center">
+      <h2  style="text-align:center">All Ads</h2>
+      <div *ngFor="let product of allProducts" class="col-sm-3" style="border :2px solid black; border-radius:10% ">
+            <h2> {{product.title}}</h2>
+            <a ><img src="images/sell.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+            <h4>Posted By : {{product.name}}</h4>
+            <h5>Category : {{product.category}}</h5>
+             
+      </div>
+    </div>
+</div>
 
 <div class="modal fade" id="logModal" role="dialog">
     <div class="modal-dialog">
@@ -128,22 +152,24 @@
           <h4 class="modal-title text-center">Login</h4>
         </div>
         <div class="modal-body">
-          <form method = "post" action = "login.html" >
+          <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)" >
 
 			         <div class="form-group">
 				            <label for="text">Username:</label>
-				            <input type="text" class="form-control" id="username" placeholder="Enter username" #userNameL>
+				            <input type="text" name="userNameL" class="form-control" id="username" placeholder="Enter username" #userNameL required #userNameLModelRef="ngModel" ngModel>
+                    <div *ngIf = "userNameLModelRef.errors && userNameLModelRef.touched" class= "alert alert-danger" [hidden]= "!userNameLModelRef.errors.required" class="alert alert-danger">
+                                   Please enter the Username
+                    </div>
 			         </div>
 			         <div class="form-group">
 				            <label for="pwd">Password:</label>
-				            <input type="password" class="form-control" id="pwd" placeholder="Enter password" #passwordL>
+				            <input type="password" class="form-control" name="passwordL" id="pwd" placeholder="Enter password" #passwordL required #passwordLModelRef="ngModel" ngModel>
+                    <div *ngIf = "passwordLModelRef.errors && passwordLModelRef.touched" class= "alert alert-danger" [hidden]= "!passwordLModelRef.errors.required" class="alert alert-danger">
+                                   Please enter the password
+                    </div>
 			         </div>
-			         <div class="checkbox">
-				            <label><input type="checkbox"> Remember me  </label>
-				            <label><a href="#"> Forgot Password </a></label>
-				
-			         </div>
-			         <button type="submit" data-dismiss="modal" class="btn btn-default" (click) = onClickLogin(userNameL.value,passwordL.value)>Submit</button>
+			       
+			         <button type="submit" [disabled]="!loginForm.form.valid" data-dismiss="modal" class="btn btn-default" (click) = onClickLogin(userNameL.value,passwordL.value)>Submit</button>
 			         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 		      </form>
        
@@ -163,52 +189,57 @@
           <h4 class="modal-title text-center">Registration</h4>
         </div>
         <div class="modal-body">
-          <form method = "post" action = "login.html" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)" >
+          <form  #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)" >
               <div class="form-group">
                   <label for="text">First Name:</label>
-                    <input type="text" class="form-control" id="fname" name="firstName" placeholder="Enter first name" required minlength="3" maxlength="12"  #firstName #firstNamevalidation="ngModel" ngModel>
-                    <!--<div [hidden]="!nameModelRef.errors.required" class="alert alert-danger">
-                            Please enter the name
-                    </div>
-                     <div [hidden]="!nameModelRef.errors.minlength" class="alert alert-danger">
-                            Please enter a name with more than three alphabets
-                    </div>-->
+                    <input type="text" class="form-control" id="fname" name="firstName" placeholder="Enter first name" minlength="3" maxlength="12"  #firstName required #firstNameModelRef="ngModel" ngModel>
+                    <div *ngIf = "firstNameModelRef.errors && firstNameModelRef.touched" class= "alert alert-danger" [hidden]= "!firstNameModelRef.errors.required" class="alert alert-danger">
+                                   Please enter the First Name                    
+			              </div>
               </div>
 
                <div class="form-group">
                   <label for="text">Last Name:</label>
-                    <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lastName" #lastName ngModel>
-                  
+                    <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lastName" #lastName required #lastNameModelRef="ngModel" ngModel>
+                    <div *ngIf = "lastNameModelRef.errors && lastNameModelRef.touched" class= "alert alert-danger" [hidden]= "!lastNameModelRef.errors.required" class="alert alert-danger">
+                                   Please enter the Last Name                    
+			              </div>
               </div>
 
               <div class="form-group">
                   <label for="text">Usename:</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter username" name="userName" #userName ngModel>
-                  
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" name="userName" #userName required #userNameModelRef="ngModel" ngModel>
+                    <div *ngIf = "userNameModelRef.errors && userNameModelRef.touched" class= "alert alert-danger" [hidden]= "!userNameModelRef.errors.required" class="alert alert-danger">
+                                   Please enter the User Name                    
+			              </div>
               </div>
 
 			       
 			       <div class="form-group">
 				          <label for="pwd">Set Password:</label>
-				            <input type="password" class="form-control" id="pwd" placeholder="set password" name="password" #password ngModel>
-			       </div>
+				            <input type="password" class="form-control" id="pwd" placeholder="set password" name="password" #password  required #passwordModelRef="ngModel" ngModel>
+                    <div *ngIf = "passwordModelRef.errors && passwordModelRef.touched" class= "alert alert-danger" [hidden]= "!passwordModelRef.errors.required" class="alert alert-danger">
+                                   Please set the Password                    
+			              </div>
+             </div>
                    <div class="form-group">
 				        <label for="email">Email:</label>
-				            <input type="email" class="form-control" id="username" placeholder="Enter email" name="email" #email ngModel>
-			       </div>
+				            <input type="email" class="form-control" id="username" placeholder="Enter email" name="email" #email required #emailModelRef="ngModel" ngModel>
+                    <div *ngIf = "emailModelRef.errors && emailModelRef.touched" class= "alert alert-danger" [hidden]= "!emailModelRef.errors.required" class="alert alert-danger">
+                                   Please enter email                    
+			              </div>
+             </div>
               <div class="form-group">
 				            <label for="phn">Contact Number:</label>
-				            <input type="text" class="form-control" id="phn" placeholder="Enter contact number" name="phone" #phone ngModel> 
-			       </div>
-             <!--<!--<div [hidden]="{{successfullLog}} " class="alert alert-danger">
-                  User Registered Successfully
+				            <input type="text" class="form-control" id="phn" placeholder="Enter contact number" name="phone" #phone required #phoneModelRef="ngModel" ngModel> 
+                    <div *ngIf = "phoneModelRef.errors && phoneModelRef.touched" class= "alert alert-danger" [hidden]= "!phoneModelRef.errors.required" class="alert alert-danger">
+                                   Please enter phone number                    
+			              </div>
              </div>
-				        <label for="phn">Contact Number:</label>
-				        <input type="text" class="form-control" id="phn" placeholder="Enter contact number" name="phone" #phone ngModel> 
-			       </div>-->
+           
              
 
-			       <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClickRegister(firstName.value , lastName.value , userName.value , password.value ,email.value, phone.value)">Register</button>
+			       <button type="button" [disabled]="!registrationForm.form.valid" class="btn btn-default" data-dismiss="modal" (click)="onClickRegister(firstName.value , lastName.value , userName.value , password.value ,email.value, phone.value)">Register</button>
 			       <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 		      </form>
        

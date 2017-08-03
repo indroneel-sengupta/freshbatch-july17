@@ -11,21 +11,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Xorshop</a>
+      <a class="navbar-brand" >Xorshop</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li ><a href="index.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li ><a (click) = "onHome()" ><span class="glyphicon glyphicon-home"> Home</span></a></li>
 		<li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By Categories
+        <a class="dropdown-toggle" data-toggle="dropdown">Search By Categories
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li *ngFor="let category of categories;"><a href="#">{{category}}  </a> </li>
+          <li *ngFor="let category of categories;"><a >{{category}}  </a> </li>
         </ul>
       </li>
         
       </ul>
-        <form class="navbar-form navbar-left">
+        <!--<form class="navbar-form navbar-left">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search">
               <div class="input-group-btn">
@@ -34,11 +34,10 @@
                 </button>
               </div>
           </div>
-        </form>
+        </form>-->
       <ul class="nav navbar-nav navbar-right">
-		<li> <a href="login.html"><span class="glyphicon glyphicon-user"></span>{{userName1}} </a> </li>
-		<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-	  </ul>
+		<li> <a (click)="onUserName()"><span class="glyphicon glyphicon-user"></span>{{userName1}} </a> </li>
+    <li> <a (click)="onLogout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>	  </ul>
     </div>
   </div>
 </nav>
@@ -48,22 +47,27 @@
 
 <div class="container" align="center">
           <h1> Post Add </h1>
-          <form method = "post" action = "login.html" class = "postAdd" align="left">
+          <form class = "postAdd"  #productForm="ngForm"  align="left"  (ngSubmit)="onSubmit(productForm.value)" novalidate>
               <div class="form-group">
-                  <label for="text">{{message}}</label>
+                  <label for="text" style="color:darkolivegreen">{{message}}</label>
                    
                   
               </div>
-              
+            
               <div class="form-group">
-                  <label for="text">Ad Title:</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter title of your Ad" #title>
-                  
+                  <label for="title">Ad Title:</label>
+                    <input type="text" required id="title"  name="title" class="form-control"  placeholder="Enter title of your Ad" #title #titleModelRef="ngModel" ngModel>
+                    <div *ngIf = "titleModelRef.errors && titleModelRef.touched" class= "alert alert-danger" [hidden]= "!titleModelRef.errors.required" class="alert alert-danger">
+                                              Please enter the Title
+                    </div>
               </div>
 
               <div class="form-group">
                   <label for="text">Name:</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your name" #name>
+                    <input type="text" class="form-control"  name="name"  placeholder="Enter your name" #name required #nameModelRef="ngModel" ngModel>
+                    <div *ngIf = "nameModelRef.errors && nameModelRef.touched" class= "alert alert-danger" [hidden]= "!nameModelRef.errors.required" class="alert alert-danger">
+                                              Please enter the name
+                    </div>
                   
               </div>
 
@@ -80,8 +84,8 @@
                   <textarea class="form-control" rows="5" id="comment" #description></textarea>
                 </div>
              
-                <button type="button" (click) = "onClickPostAdd(title.value,name.value,category.value,description.value)" class="btn btn-default" onsubmit ="login.html">Post Ad</button>
-                <button type="button" class="btn btn-default" onclick="login.html">Cancel</button>
+                <button [disabled]="!productForm.form.valid" type="button"  (click) = "onClickPostAdd(title.value,name.value,category.value,description.value)" class="btn btn-default" >Post Ad</button>
+                <button type="button" (click)="onCancel()" class="btn btn-default" onclick="">Cancel</button>
               
           </form>
        
