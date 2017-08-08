@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import { ActivatedRoute } from "@angular/router";
 import { CategoriesService } from "../../services/categoriesServices/categoriesService.service";
 import { PostAddService } from "../../services/postAddService/postAddService.service";
+import { LogoutService } from "../../services/logoutService/logoutService.service";
 
 
 @Component({
@@ -13,12 +14,13 @@ import { PostAddService } from "../../services/postAddService/postAddService.ser
 })
 
 export class PostAdd{
-       authToken1:any;
+    logoutToken: any;
+    authToken1: any;
        userName1:any;
        categories:Array<any> = [];
        postAddDetails:any;
        message:string;
-       constructor(private regService:RegistrationService,private postAddService:PostAddService  ,private activatedRoute:ActivatedRoute,private logService:LoginService , private router: Router , private categoriesService:CategoriesService ){
+       constructor(private regService:RegistrationService,private logoutService:LogoutService,private postAddService:PostAddService  ,private activatedRoute:ActivatedRoute,private logService:LoginService , private router: Router , private categoriesService:CategoriesService ){
                 categoriesService.getAllCategories().subscribe((response:any)=>{
                 response.data.itemList.forEach((add:any) => {
                 this.categories.push(add.name);
@@ -31,6 +33,22 @@ export class PostAdd{
         this.userName1 = this.activatedRoute.snapshot.params['userName'];
         console.log(this.userName1);
      }
+     onUserName(){
+         this.router.navigate(['/loginHome',this.authToken1,this.userName1]);
+     }
+     onHome(){
+        this.router.navigate(['/loginHome',this.authToken1,this.userName1]);
+     }
+     onCancel(){
+        this.router.navigate(['/loginHome',this.authToken1,this.userName1]);
+     }
+     onLogout(){
+       this.logoutToken=this.authToken1;
+       this.authToken1=null;
+       this.logoutService.sendLogDetail(this.logoutToken).subscribe((response:any)=>{},(error:any)=>{});
+       this.router.navigate(['']);
+
+    }
 
 
          onClickPostAdd(titlePA:string , namePA:string , categoryPA:string , descriptionPA:string):void{
@@ -44,8 +62,7 @@ export class PostAdd{
                 };
                 console.log(this.postAddDetails);
                 this.postAddService.sendPostAddDetail(this.postAddDetails,this.authToken1).subscribe((data:any)=> { 
-                            //  this.successfullReg=data;
-                            
+                                           
                             if(data.data['id'] == null){
                                 this.message = "Post Add Unsucessful";
                                 console.log("Post Add Unsucessful");
@@ -55,5 +72,7 @@ export class PostAdd{
                                 console.log('Received products: ', data);
                             } 
                 });
+
+                this.router.navigate(['/loginHome',this.authToken1,this.userName1]);
     }
 }

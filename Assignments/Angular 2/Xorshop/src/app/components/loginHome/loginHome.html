@@ -17,15 +17,15 @@
       <ul class="nav navbar-nav">
         <li ><a href="index.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
 		<li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By Categories
+        <a class="dropdown-toggle" data-toggle="dropdown" >Search By Categories
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li *ngFor="let category of categoriesLogin;"><a href="#">{{category}}  </a> </li>
+          <li *ngFor="let category of categoriesLogin;"><a>{{category}}  </a> </li>
         </ul>
       </li>
         
       </ul>
-        <form class="navbar-form navbar-left">
+        <!--<form class="navbar-form navbar-left">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search">
               <div class="input-group-btn">
@@ -34,10 +34,10 @@
                 </button>
               </div>
           </div>
-        </form>
+        </form>-->
       <ul class="nav navbar-nav navbar-right">
-		<li> <a href="login.html"><span class="glyphicon glyphicon-user"></span> {{userName}}</a> </li>
-		<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+		<li> <a><span class="glyphicon glyphicon-user"></span> {{userName}}</a> </li>
+		<li><a (click)="onLogout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 	  </ul>
     </div>
   </div>
@@ -48,31 +48,23 @@
 
 <div id = "addBtn" class = "container text-right">  
   <button type="button" (click)="onClickPostAdd()"  class="btn btn-default"><a style="text-decoration: none; color: black;">Post Add</a></button>
-  <button type="button" class="btn btn-default"><a style="text-decoration: none; color: black;">Edit Add</a></button>
+  <!--<button type="button" class="btn btn-default"><a style="text-decoration: none; color: black;">Edit Add</a></button>-->
 </div>
 
 
 
   
-<div class="container-fluid bg-3 text-center">    
-  <h2>Categories</h2><br>
+<div class="container">    
+  <h2 style="text-align:center">My Ads</h2><br>
   <div class="row text-center">
-    <div class="col-sm-3">
-      <p>Automobiles</p>
-      <a href="automobiles.html"><img src="images/automobiles.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    <div *ngFor="let user of userProducts" class="col-sm-3" style="border :2px solid black; border-radius:10% ">
+        <h2>{{user.title}}</h2>
+        <a ><img src="images/sell.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+        <h4>Category: {{user.category}} </h4>
+        <h4>Name: {{user.name}} </h4>
+      
     </div>
-    <div class="col-sm-3"> 
-      <p>Electronics </p>
-       <a href="electronics.html"> <img src="images/electronics.png" class="img-responsive" style="width:100%" alt="Image"></a>
-    </div>
-  <div class="col-sm-3">
-      <p>Fashion</p>
-      <a href="fashion.html"><img src="images/fashion.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
-    </div>
-  <div class="col-sm-3"> 
-      <p>Real Estate </p>
-       <a href="realEstate.html"><img src="images/realestate.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
-    </div>
+    
     
    </div>
 </div><br><br>
