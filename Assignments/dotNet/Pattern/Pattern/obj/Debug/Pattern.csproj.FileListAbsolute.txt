@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\bin\Debug\Pattern.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\bin\Debug\Pattern.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\bin\Debug\Pattern.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\obj\Debug\Pattern.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\obj\Debug\Pattern.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Pattern\Pattern\obj\Debug\Pattern.pdb
