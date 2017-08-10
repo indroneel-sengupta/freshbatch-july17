@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\bin\Debug\Assignment2.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\obj\Debug\Assignment2.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\obj\Debug\Assignment2.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment2\Assignment2\obj\Debug\Assignment2.pdb

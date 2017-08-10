@@ -1,0 +1,31 @@
+•Implement one Base class AreaMaster which will have these properties 
+ID, Code, Name, Description, AreaType, AreaID
+
+o	Here AreaType is the enum which consists of (Country, State, City and District).
+o	Create some collections of List<AreaMaster> AreaCollection inside AreaMaster as static member. So whenever any AreaMaster object is created same time add the object into the collection. 
+•	AreaMaster will have multiple derive classes like Country Master, State Master, City Master and District Master.
+o	Override the property AreaType  in all the derive classes.
+•	Create default constructors as well as Parametrized constructors.
+•	Create the methods with name GetAreaMasterByCity, GetAreaMasterByState, GetAreaMasterByCountry
+GetAreaMasterByCity(string name)
+{
+                //refer below example
+} 
+
+For example:
+ID	Name	Code	Description	AreaType	AreaID
+1	India	IND	Anything	Country(1)	
+2	Maharashtra	MH	Anything	State(2)	1
+3	Pune	PUN	Anything	City(3)	2
+4	Pune District	PD	Anything	District(4)	3
+					
+
+                So when you input “Pune” in GetAreaMasterByCity(“Pune”) than it should print in console. Below string.
+                
+Name: Pune,
+State: Maharashtra,
+Country: India,
+Code: PUN,
+Description: Anything
+                
+Similarly implementation for state and countries as well.

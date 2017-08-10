@@ -1,0 +1,5 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\NamespaceDemo\NamespaceDemo\bin\Debug\NamespaceDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\NamespaceDemo\NamespaceDemo\bin\Debug\NamespaceDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\NamespaceDemo\NamespaceDemo\bin\Debug\NamespaceDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\NamespaceDemo\NamespaceDemo\obj\Debug\NamespaceDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\NamespaceDemo\NamespaceDemo\obj\Debug\NamespaceDemo.pdb
