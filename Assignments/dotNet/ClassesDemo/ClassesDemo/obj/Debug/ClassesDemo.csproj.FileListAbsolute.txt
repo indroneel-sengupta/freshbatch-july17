@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\bin\Debug\ClassesDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\bin\Debug\ClassesDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\bin\Debug\ClassesDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\obj\Debug\ClassesDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\obj\Debug\ClassesDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ClassesDemo\ClassesDemo\obj\Debug\ClassesDemo.pdb
