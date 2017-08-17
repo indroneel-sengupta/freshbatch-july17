@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\bin\Debug\OperatorsDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\obj\Debug\OperatorsDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\bin\Debug\OperatorsDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\bin\Debug\OperatorsDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\obj\Debug\OperatorsDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\OperatorsDemo\OperatorsDemo\obj\Debug\OperatorsDemo.pdb
