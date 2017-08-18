@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\bin\Debug\Assignment_18_Aug.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\obj\Debug\Assignment_18_Aug.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\bin\Debug\Assignment_18_Aug.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\bin\Debug\Assignment_18_Aug.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\obj\Debug\Assignment_18_Aug.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\Assignment_18_Aug\Assignment_18_Aug\obj\Debug\Assignment_18_Aug.pdb
