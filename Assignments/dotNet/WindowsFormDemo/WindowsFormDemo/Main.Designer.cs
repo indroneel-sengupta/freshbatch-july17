@@ -37,6 +37,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtAmount = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblUserName
@@ -95,7 +97,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(331, 191);
+            this.txtPassword.Location = new System.Drawing.Point(331, 173);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 20);
             this.txtPassword.TabIndex = 6;
@@ -103,7 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(274, 140);
+            this.label1.Location = new System.Drawing.Point(270, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 7;
@@ -112,12 +114,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(274, 191);
+            this.label2.Location = new System.Drawing.Point(274, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtAmount
+            // 
+            this.txtAmount.Location = new System.Drawing.Point(331, 208);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(200, 20);
+            this.txtAmount.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label3.Location = new System.Drawing.Point(274, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Amount";
             // 
             // Main
             // 
@@ -125,6 +145,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(729, 423);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
@@ -156,5 +178,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtAmount;
+        private System.Windows.Forms.Label label3;
     }
 }

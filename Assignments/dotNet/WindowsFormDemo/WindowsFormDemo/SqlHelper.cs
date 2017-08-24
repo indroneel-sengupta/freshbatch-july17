@@ -30,6 +30,20 @@ namespace WindowsFormDemo
             return ds.Tables[0];
         }
 
+        public SqlDataReader ExecuteQuery(string sqlQuery)
+        {
+            _sqlCommand = new SqlCommand(sqlQuery, _sqlConnection);
+            //_sqlCommand.CommandText = sqlQuery();
+            //_sqlCommand.Connection = _sqlConnection;
+            return _sqlCommand.ExecuteReader();
+        }
+
+        public string ExecuteScalar(string sqlQuery)
+        {
+            _sqlCommand = new SqlCommand(sqlQuery, _sqlConnection);
+            return _sqlCommand.ExecuteScalar().ToString();
+        }
+
         public bool ExecuteNonQuery(string sql)
         {
             var result = false;
@@ -39,7 +53,7 @@ namespace WindowsFormDemo
             return result;
         }
 
-        public void Update(string userName, string password)
+        public void Update(string userName, string password, decimal balance)
         {
             sqlQuerry = string.Format(@"select * from Login where UserName = '{0}' ",userName);
             var ds = new DataSet();
@@ -51,6 +65,7 @@ namespace WindowsFormDemo
             {
                 dt.Rows[0][1] = userName;
                 dt.Rows[0][2] = password;
+                dt.Rows[0][3] = balance;
                 _sqlDataAdapter.Update(dt);
             }
             

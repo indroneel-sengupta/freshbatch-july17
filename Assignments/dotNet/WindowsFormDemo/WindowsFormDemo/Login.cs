@@ -34,9 +34,12 @@ namespace WindowsFormDemo
             var sqlWriter = _sqlHelper.ExecuteNonQuery(sqlQuerry);
         }
 
-        public void Update(string usrName,string password)
+        public void Update(string usrName,string password,decimal amount)
         {
-            _sqlHelper.Update(usrName,password);
+            sqlQuerry = string.Format(@"select Balance from Login 
+                                        where UserName = '{0}' AND Password = '{1}'",usrName,password);
+            decimal curBal = Convert.ToDecimal(_sqlHelper.ExecuteScalar(sqlQuerry));
+            _sqlHelper.Update(usrName,password,(curBal+amount));
         }
     }
 }

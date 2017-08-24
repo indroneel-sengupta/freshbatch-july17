@@ -58,7 +58,7 @@ namespace WindowsFormDemo
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Login l = new WindowsFormDemo.Login();
-            l.Update(txtUsername.Text, txtPassword.Text);
+            l.Update(txtUsername.Text, txtPassword.Text,Convert.ToDecimal(txtAmount.Text));
         }
     }
 }

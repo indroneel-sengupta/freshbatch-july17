@@ -43,15 +43,14 @@ namespace WindowsFormDemo
             bool checkLogin = l._Login(userName,password);
             if (checkLogin)
             {
-                this.Hide();
                 Main mw = new WindowsFormDemo.Main(userName);
-                mw.Show();
+                mw.ShowDialog();
             }
             
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {            
             this.Close();
         }
 
