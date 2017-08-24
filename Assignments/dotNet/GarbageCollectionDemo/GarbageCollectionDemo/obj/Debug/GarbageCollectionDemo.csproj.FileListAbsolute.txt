@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\bin\Debug\GarbageCollectionDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\bin\Debug\GarbageCollectionDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\bin\Debug\GarbageCollectionDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\obj\Debug\GarbageCollectionDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\obj\Debug\GarbageCollectionDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\GarbageCollectionDemo\GarbageCollectionDemo\obj\Debug\GarbageCollectionDemo.pdb

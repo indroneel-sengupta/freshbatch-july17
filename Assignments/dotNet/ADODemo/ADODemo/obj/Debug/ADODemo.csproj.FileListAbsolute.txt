@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\bin\Debug\ADODemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\bin\Debug\ADODemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\bin\Debug\ADODemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\obj\Debug\ADODemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\obj\Debug\ADODemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ADODemo\ADODemo\obj\Debug\ADODemo.pdb

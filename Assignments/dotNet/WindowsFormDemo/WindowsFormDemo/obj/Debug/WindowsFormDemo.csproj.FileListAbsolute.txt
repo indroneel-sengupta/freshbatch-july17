@@ -1,0 +1,10 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\bin\Debug\WindowsFormDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\bin\Debug\WindowsFormDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\bin\Debug\WindowsFormDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.Form1.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.Properties.Resources.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.csproj.GenerateResource.Cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsFormDemo\WindowsFormDemo\obj\Debug\WindowsFormDemo.Main.resources

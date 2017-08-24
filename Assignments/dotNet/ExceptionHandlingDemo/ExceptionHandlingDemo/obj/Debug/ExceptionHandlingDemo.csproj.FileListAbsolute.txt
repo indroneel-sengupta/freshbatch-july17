@@ -1,0 +1,6 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\bin\Debug\ExceptionHandlingDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\obj\Debug\ExceptionHandlingDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\bin\Debug\ExceptionHandlingDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\bin\Debug\ExceptionHandlingDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\obj\Debug\ExceptionHandlingDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\ExceptionHandlingDemo\ExceptionHandlingDemo\obj\Debug\ExceptionHandlingDemo.pdb
