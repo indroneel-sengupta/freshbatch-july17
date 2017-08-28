@@ -1,0 +1,9 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.WindowsServiceDemo.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.csproj.GenerateResource.Cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.ProjectInstaller.resources

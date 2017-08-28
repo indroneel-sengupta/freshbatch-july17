@@ -4,6 +4,6 @@
     <Id>1</Id>
     <UserName>abc</UserName>
     <Password>123</Password>
-    <Balance>0.000</Balance>
+    <Balance>5000.020</Balance>
   </login>
 </NewDataSet>

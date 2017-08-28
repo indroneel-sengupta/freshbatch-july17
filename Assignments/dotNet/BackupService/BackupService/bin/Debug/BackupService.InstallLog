@@ -1,0 +1,139 @@
+﻿Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Uninstalling assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Removing EventLog source BackupService.
+Service BackupService is being removed from the system...
+Service BackupService was successfully removed from the system.
+Installing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+Installing service BackupService...
+Service BackupService has been successfully installed.
+Creating EventLog source BackupService in log Application...
+Committing assembly 'D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.InstallLog
+   assemblypath = D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe

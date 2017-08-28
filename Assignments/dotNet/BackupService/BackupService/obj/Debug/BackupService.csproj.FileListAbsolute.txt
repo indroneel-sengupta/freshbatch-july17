@@ -1,0 +1,9 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\bin\Debug\BackupService.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.ProjectInstaller.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.BackupService.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.csproj.GenerateResource.Cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\BackupService\BackupService\obj\Debug\BackupService.pdb

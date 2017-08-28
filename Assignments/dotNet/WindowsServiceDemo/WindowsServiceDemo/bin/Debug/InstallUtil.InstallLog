@@ -1,0 +1,144 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: Access is denied
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: The specified service has been marked for deletion
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+An exception occurred during the Install phase.
+System.InvalidOperationException: User has canceled installation of services in executable D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: The specified service has been marked for deletion
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe assembly's progress.
+The file is located at D:\project_dir\freshbatch-july17\Assignments\dotNet\WindowsServiceDemo\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
