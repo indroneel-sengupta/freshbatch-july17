@@ -1,0 +1,10 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\DemoEntity.dll.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\DemoEntity.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\DemoEntity.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\EntityFramework.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\EntityFramework.SqlServer.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\EntityFramework.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\bin\Debug\EntityFramework.SqlServer.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\obj\Debug\DemoEntity.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\obj\Debug\DemoEntity.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntity\obj\Debug\DemoEntity.pdb

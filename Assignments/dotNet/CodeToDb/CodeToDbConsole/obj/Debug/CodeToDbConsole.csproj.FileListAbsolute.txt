@@ -1,0 +1,12 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\CodeToDbConsole.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\CodeToDbConsole.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\CodeToDbConsole.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\CodeToDb.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\EntityFramework.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\EntityFramework.SqlServer.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\CodeToDb.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\EntityFramework.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\bin\Debug\EntityFramework.SqlServer.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\obj\Debug\CodeToDbConsole.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\obj\Debug\CodeToDbConsole.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDbConsole\obj\Debug\CodeToDbConsole.pdb

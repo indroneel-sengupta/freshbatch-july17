@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginEntityApplication", "LoginEntityApplication\LoginEntityApplication.csproj", "{FEB75B00-7D4A-44C6-AC13-932B052B3794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{989394FD-9EBA-4E78-9F01-CBE05C6FF759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB75B00-7D4A-44C6-AC13-932B052B3794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB75B00-7D4A-44C6-AC13-932B052B3794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB75B00-7D4A-44C6-AC13-932B052B3794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB75B00-7D4A-44C6-AC13-932B052B3794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989394FD-9EBA-4E78-9F01-CBE05C6FF759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989394FD-9EBA-4E78-9F01-CBE05C6FF759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989394FD-9EBA-4E78-9F01-CBE05C6FF759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989394FD-9EBA-4E78-9F01-CBE05C6FF759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

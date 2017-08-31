@@ -1,0 +1,14 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\CodeToDb.dll.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\CodeToDb.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\CodeToDb.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\EntityFramework.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\EntityFramework.SqlServer.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\EntityFramework.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\bin\Debug\EntityFramework.SqlServer.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.Migrations.InitialCreate.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.csproj.GenerateResource.Cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.Migrations.AddURL.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\CodeToDb\CodeToDb\obj\Debug\CodeToDb.Migrations.AddDepartment.resources

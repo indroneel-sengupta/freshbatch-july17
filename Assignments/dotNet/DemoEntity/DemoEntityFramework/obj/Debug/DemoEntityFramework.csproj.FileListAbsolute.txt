@@ -1,0 +1,12 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\DemoEntityFramework.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\DemoEntityFramework.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\DemoEntityFramework.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\DemoEntity.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\EntityFramework.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\DemoEntity.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\EntityFramework.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\obj\Debug\DemoEntityFramework.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\obj\Debug\DemoEntityFramework.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\DemoEntity\DemoEntityFramework\obj\Debug\DemoEntityFramework.pdb

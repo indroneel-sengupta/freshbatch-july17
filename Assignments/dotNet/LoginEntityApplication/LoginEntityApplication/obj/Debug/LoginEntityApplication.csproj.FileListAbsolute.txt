@@ -1,0 +1,17 @@
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\LoginEntityApplication.exe.config
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\LoginEntityApplication.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\LoginEntityApplication.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.csprojResolveAssemblyReference.cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.AfterLogin.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.Form1.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.Properties.Resources.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.csproj.GenerateResource.Cache
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.exe
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\obj\Debug\LoginEntityApplication.AfterRegister.resources
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\DataBase.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\EntityFramework.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\EntityFramework.SqlServer.dll
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\DataBase.pdb
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\EntityFramework.xml
+D:\project_dir\freshbatch-july17\Assignments\dotNet\LoginEntityApplication\LoginEntityApplication\bin\Debug\EntityFramework.SqlServer.xml
