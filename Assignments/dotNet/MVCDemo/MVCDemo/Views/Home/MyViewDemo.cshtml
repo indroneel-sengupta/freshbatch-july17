@@ -1,0 +1,28 @@
+﻿
+@using MVCDemo.Models;
+@{
+    ViewBag.Title = "MyViewDemo";
+}
+@*<h2>@ViewBag.Title
+    @Model.Sal
+
+    @if(Model.Sal > 50){
+        <h2> model gareater than 50</h2>
+    }
+    else
+    {
+        <h2> model less than 50</h2>
+    }*@
+
+<form onsubmit="@Model.Add()"
+
+    @for(int i = 0; i < Model.Entities.Length; i++)
+    {
+        <p>Account Number : @Model.Entities[i].AccountNumber</p>
+        <p>User Name : @Model.Entities[i].UserName</p>
+        <p>Balance : @Model.Entities[i].Balance
+    </p>
+    }
+
+@*</h2>*@
+

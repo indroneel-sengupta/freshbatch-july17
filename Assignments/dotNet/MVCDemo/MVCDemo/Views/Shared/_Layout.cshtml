@@ -1,4 +1,6 @@
 ﻿<!DOCTYPE html>
+
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,6 +9,8 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
+
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -21,8 +25,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    @*<li>@Html.ActionLink("About", "Post1Action", "Home")</li>*@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    @Html.ActionLink("Post", "Post1Action", "Home", null,  new { @class = "postLink" })
                 </ul>
             </div>
         </div>
@@ -39,4 +45,16 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>
+<script type="text/javascript">
+  $(function(){
+    $("a.postLink").click(function(e){
+      e.preventDefault();
+      $.post($(this).attr("href"),function(data){
+          // got the result in data variable. do whatever you want now
+          //may be reload the page
+      });
+    });
+  });
+</script>
