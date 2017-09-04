@@ -1,0 +1,41 @@
+﻿@model MVCValidationDemo.Models.UserDetails
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm("Login", "UserLogin", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td> Username </td>
+            @*<td> <input type="text" id="userName" name="userName" > </td>*@
+            <td> @Html.TextBoxFor(u => u.userName) </td>
+            <td> @Html.ValidationMessageFor(u => u.userName)</td>
+        </tr>
+        <tr>
+            <td> Password </td>
+            @*<td> <input type="password" id="password" name="password"> </td>*@
+            <td> @Html.PasswordFor(u => u.password) </td>
+            <td> @Html.ValidationMessageFor(u => u.password)</td>
+        </tr>
+        <tr>
+            <td> Mobile Number </td>
+            @*<td> <input type="password" id="password" name="password"> </td>*@
+            <td> @Html.TextBoxFor(u => u.mobNumber) </td>
+            <td> @Html.ValidationMessageFor(u => u.mobNumber)</td>
+        </tr>
+        <tr>
+            <td> Email </td>
+            @*<td> <input type="password" id="password" name="password"> </td>*@
+            <td> @Html.TextBoxFor(u => u.email) </td>
+            <td> @Html.ValidationMessageFor(u => u.email)</td>
+        </tr>
+        <tr>
+            <td colspan="2"> <input type="submit" name="btnSubmit" value="Register" class="form-control btn btn-primary"></td>
+        </tr>
+    </table>
+}

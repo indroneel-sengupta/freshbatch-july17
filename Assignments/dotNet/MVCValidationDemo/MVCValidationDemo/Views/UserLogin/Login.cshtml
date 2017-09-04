@@ -1,0 +1,26 @@
+﻿@model MVCValidationDemo.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("DoLogin", "UserLogin", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td> Username </td>
+            @*<td> <input type="text" id="userName" name="userName" > </td>*@
+            <td> @Html.TextBoxFor(u => u.userName) </td>
+            <td> @Html.ValidationMessageFor(u => u.userName)</td>
+        </tr>
+        <tr>
+            <td> Password </td>
+            @*<td> <input type="password" id="password" name="password"> </td>*@
+            <td> @Html.PasswordFor(u => u.password) </td>
+            <td> @Html.ValidationMessageFor(u => u.password)</td>
+        </tr>
+        <tr>
+            <td colspan="2"> <input type="submit" name="btnSubmit" class="form-control btn btn-primary"></td>
+        </tr>
+    </table>
+}

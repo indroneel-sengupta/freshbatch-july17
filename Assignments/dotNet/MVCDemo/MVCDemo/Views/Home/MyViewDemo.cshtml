@@ -14,15 +14,36 @@
         <h2> model less than 50</h2>
     }*@
 
-<form onsubmit="@Model.Add()"
+<form onsubmit="" method="post" action="">
 
-    @for(int i = 0; i < Model.Entities.Length; i++)
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="txtName" id="txtName"></td>
+        </tr>
+
+        <tr>
+            <td>Salary</td>
+            <td><input type="text" name="txtSalary" id="txtSalary"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="Reset" > </td>
+        </tr>
+
+
+    </table>
+
+    @*@for (int i = 0; i < Model.Entities.Length; i++)
     {
         <p>Account Number : @Model.Entities[i].AccountNumber</p>
         <p>User Name : @Model.Entities[i].UserName</p>
-        <p>Balance : @Model.Entities[i].Balance
-    </p>
-    }
+        <p>
+            Balance : @Model.Entities[i].Balance
+        </p>
+    }*@
+</form>
 
 @*</h2>*@
 

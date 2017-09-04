@@ -79,10 +79,10 @@ namespace MVCDemo.Controllers
         {
             
 
-            dynamic response = new ExpandoObject();
-            response.Add += new AddEmpEvent(AddEmp);
+            //dynamic response = new ExpandoObject();
+            //response.Add += new AddEmpEvent(AddEmp);
             //response.Entities = logObj.BankDetails.ToArray<BankDetail>();
-            return View(response);
+            return View();
         }
 
         public void AddEmp(Employee emp)
@@ -90,6 +90,14 @@ namespace MVCDemo.Controllers
             var empObj = new EmployeeContext();
             empObj.Employees.Add(emp);
             empObj.SaveChanges();
+        }
+
+        public class MyEmployeeBinder : DefaultModelBinder
+        {
+            protected override object CreateModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Type modelType)
+            {
+                return base.CreateModel(controllerContext, bindingContext, modelType);)
+            }
         }
     }
 }
