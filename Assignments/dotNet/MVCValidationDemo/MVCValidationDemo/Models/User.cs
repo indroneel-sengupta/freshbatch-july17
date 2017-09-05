@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Globalization;
+
 
 namespace MVCValidationDemo.Models
 {
@@ -10,7 +12,7 @@ namespace MVCValidationDemo.Models
     {
         [Key]
         [Required]
-        [RegularExpression(@"^[A-Za-z]{4,6}[0-9]{4,6}$",ErrorMessage ="Invalid Credentials")]
+        [RegularExpression(@"^[A-Za-z]{4,6}[0-9]{4,6}$",ErrorMessage ="Invalid Credentials")]       
         public string userName { get; set; }
 
         [Required(ErrorMessage ="please enter password")]

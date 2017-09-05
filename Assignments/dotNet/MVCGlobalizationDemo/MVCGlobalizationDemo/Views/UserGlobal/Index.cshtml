@@ -1,0 +1,12 @@
+﻿@using MVCGlobalizationDemo.Models;
+@model User
+@{
+    ViewBag.Title = "Index";
+   // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@Html.LabelFor(u=>u.FirstName)
+@Html.TextBoxFor(u=> u.FirstName)
+@Html.LabelFor(u=>u.LastName)
+@Html.TextBoxFor(u=>u.LastName)
