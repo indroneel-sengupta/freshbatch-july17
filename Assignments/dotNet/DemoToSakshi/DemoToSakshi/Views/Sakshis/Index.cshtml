@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DemoToSakshi.Models.Sakshi>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.sakName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sakAge)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.sakName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sakAge)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.sakId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.sakId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.sakId })
+        </td>
+    </tr>
+}
+
+</table>
