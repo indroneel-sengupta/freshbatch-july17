@@ -1,0 +1,119 @@
+﻿@model MVCAjaxDemo.Models.UserBinder
+
+@{
+    ViewBag.Title = "Insert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Insert</h2>
+<html>
+    <head>
+        <script src="~/Scripts/jquery-1.10.2.js">        
+        </script>
+    </head>
+    
+    <body>
+        @*@using (Html.BeginForm("Search", "User", FormMethod.Post))
+        {*@
+             <table>
+                 <tr>
+                     <td><label>Search By Id </label></td>
+                     <td>@Html.TextBoxFor(u => u.user.Id, new { id = "txtSearch"})</td>  
+                     <td><input type="button" name="Search" onclick="search()" value="Submit" /></td> 
+                 </tr>
+             </table>
+            <script type="text/javascript">
+                function search() {
+                    $("#result").empty();
+                    $("#result").append("<tr><th> User Id</th><th> User Name)</th><th>User City</th></tr>");
+                    var value = $("#txtSearch").val();
+                    $.post("GetSearchedUser", { ident: value }, BindData);
+                }
+
+                function BindData(data)
+                {
+                    for (var i = 0 ; i < data.length ; i++)
+                    {
+                        var newRow = "<tr> <td>" + data[i].Id + "</td>" +
+                                        "<td> " + data[i].name + "</td>" +
+                                        "<td>  " + data[i].userCity + "</td> </tr>"
+                        $("#result").append(newRow);
+                    }
+
+                }
+
+            </script>
+        @*}*@
+
+
+
+        @using (Html.BeginForm("Index","User",FormMethod.Post))
+        {
+            <table>
+                 @*<tr>
+                    <td>@Html.LabelFor(u => u.user.Id)</td>  
+                    <td>@Html.TextBoxFor(u => u.user.Id)</td> 
+                 </tr>*@
+                
+                <tr>
+                    <td>@Html.LabelFor(u => u.user.name)</td>
+                    <td>@Html.TextBoxFor(u => u.user.name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(u => u.user.userCity)</td>
+                    <td>@Html.TextBoxFor(u => u.user.userCity)</td>
+                </tr>
+               
+            </table>
+            <input type="submit" value="Submit"/>
+            
+            <div>
+                <table id="result">
+                    <tr>
+                        <th>@Html.LabelFor(u=>u.user.Id)</th>
+                        <th>@Html.LabelFor(u=>u.user.name)</th>
+                        <th>@Html.LabelFor(u => u.user.userCity)</th>
+
+                    </tr>
+                </table>
+            </div>
+            <script type="text/javascript">
+                $.get("GetAllusers", null, BindData);
+
+                function BindData(data)
+                {
+                    $("#result").empty();
+                    $("#result").append("<tr><th> User Id</th><th> User Name)</th><th>User City</th></tr>");
+                    for (var i = 0 ; i < data.length ; i++)
+                    {
+                        var newRow = "<tr> <td>" + data[i].Id + "</td>" +
+                                        "<td> " + data[i].name + "</td>" +
+                                        "<td>  " + data[i].userCity + "</td> </tr>"
+                        $("#result").append(newRow);
+                    }
+
+                }
+
+            </script>
+            
+            @*<table>
+                
+                  @foreach (var user in Model.users)
+                  {
+                       <tr>
+                            
+                            <td>@user.Id</td>
+                        </tr>
+                        <tr>
+                            <td>@user.name</td>
+                        </tr>
+                        <tr>
+                            <td>@user.userCity </td>
+                        </tr>
+                  }
+              
+
+            </table>*@
+        }
+    </body>
+</html>
